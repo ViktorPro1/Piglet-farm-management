@@ -1,0 +1,108 @@
+.diseases-layout {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 20px;
+  align-items: start;
+}
+
+.diseases-list {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.disease-item {
+  padding: 12px 14px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  text-align: left;
+  transition: all 0.15s;
+  color: var(--text);
+  width: 100%;
+}
+
+.disease-item:hover {
+  border-color: var(--border-light);
+  background: var(--bg-3);
+}
+
+.disease-item.active {
+  border-color: var(--accent-dim);
+  background: var(--accent-glow);
+}
+
+.disease-item-name {
+  font-size: 13.5px;
+  font-weight: 600;
+}
+
+.disease-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.disease-name {
+  font-family: var(--font-display);
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.disease-section {
+  margin-bottom: 22px;
+  padding-bottom: 22px;
+  border-bottom: 1px solid var(--border);
+}
+
+.disease-section:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.disease-section-title {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  margin-bottom: 12px;
+}
+
+.symptoms-title { color: var(--orange); }
+.treatment-title { color: var(--accent); }
+.prevention-title { color: #6ab0e0; }
+
+.symptom-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.symptom-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 13.5px;
+  color: var(--text-2);
+}
+
+.symptom-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--orange);
+  flex-shrink: 0;
+  margin-top: 6px;
+}
+
+.disease-text {
+  font-size: 13.5px;
+  color: var(--text-2);
+  line-height: 1.7;
+}

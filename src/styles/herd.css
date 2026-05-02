@@ -1,0 +1,26 @@
+.filter-tabs {
+  display: flex;
+  gap: 6px;
+}
+
+.filter-tab {
+  padding: 7px 16px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 600;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  color: var(--text-2);
+  transition: all 0.15s;
+}
+
+.filter-tab:hover {
+  color: var(--text);
+  border-color: var(--border-light);
+}
+
+.filter-tab.active {
+  background: var(--accent-glow);
+  border-color: var(--accent-dim);
+  color: var(--accent);
+}

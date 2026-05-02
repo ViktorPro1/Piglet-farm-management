@@ -1,0 +1,119 @@
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+.stat-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.stat-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 3px;
+}
+
+.stat-accent::before { background: var(--accent); }
+.stat-orange::before { background: var(--orange); }
+.stat-yellow::before { background: var(--yellow); }
+.stat-green::before { background: var(--accent); }
+
+.stat-icon {
+  font-size: 18px;
+  opacity: 0.5;
+}
+
+.stat-value {
+  font-family: var(--font-display);
+  font-size: 36px;
+  font-weight: 700;
+  color: var(--text);
+  line-height: 1.1;
+  margin: 8px 0 4px;
+}
+
+.stat-label {
+  font-size: 12px;
+  color: var(--text-2);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.event-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.event-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.event-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  margin-top: 5px;
+}
+
+.dot-orange { background: var(--orange); }
+.dot-accent { background: var(--accent); }
+
+.event-name {
+  font-size: 13.5px;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.event-date {
+  font-size: 12px;
+  color: var(--text-2);
+  margin-top: 1px;
+}
+
+.empty-small {
+  font-size: 13px;
+  color: var(--text-3);
+  padding: 12px 0;
+}
+
+.welcome-banner {
+  margin-top: 32px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 48px 32px;
+  text-align: center;
+}
+
+.welcome-icon {
+  font-size: 56px;
+  margin-bottom: 16px;
+  filter: drop-shadow(0 0 16px rgba(122,182,72,0.3));
+}
+
+.welcome-banner h2 {
+  font-family: var(--font-display);
+  font-size: 20px;
+  margin-bottom: 8px;
+  color: var(--text);
+}
+
+.welcome-banner p {
+  font-size: 14px;
+  color: var(--text-2);
+  max-width: 420px;
+  margin: 0 auto;
+}

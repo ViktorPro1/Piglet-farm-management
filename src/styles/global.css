@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@400;600;700&family=Mulish:wght@400;500;600&display=swap');
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --bg: #0f1410;
+  --bg-2: #161d17;
+  --bg-3: #1e271f;
+  --bg-card: #1a221b;
+  --border: #2a3a2b;
+  --border-light: #344835;
+  --accent: #7ab648;
+  --accent-dim: #4e7a2a;
+  --accent-glow: rgba(122, 182, 72, 0.15);
+  --text: #e8f0e9;
+  --text-2: #9aaa9b;
+  --text-3: #5a6a5b;
+  --red: #e05555;
+  --orange: #e09040;
+  --yellow: #d4b840;
+  --radius: 12px;
+  --radius-sm: 8px;
+  --font-display: 'Unbounded', sans-serif;
+  --font-body: 'Mulish', sans-serif;
+  --shadow: 0 4px 24px rgba(0,0,0,0.4);
+  --shadow-sm: 0 2px 8px rgba(0,0,0,0.3);
+}
+
+html, body, #root {
+  height: 100%;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-body);
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--bg-2); }
+::-webkit-scrollbar-thumb { background: var(--border-light); border-radius: 3px; }
+
+button {
+  font-family: var(--font-body);
+  cursor: pointer;
+}
+
+input, select, textarea {
+  font-family: var(--font-body);
+}

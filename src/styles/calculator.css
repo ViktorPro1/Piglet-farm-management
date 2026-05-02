@@ -1,0 +1,158 @@
+.calc-layout {
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  gap: 20px;
+  align-items: start;
+}
+
+.animal-types {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.animal-btn {
+  padding: 10px 14px;
+  background: var(--bg-3);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  color: var(--text-2);
+  font-size: 13px;
+  font-weight: 500;
+  text-align: left;
+  transition: all 0.15s;
+}
+
+.animal-btn:hover {
+  border-color: var(--border-light);
+  color: var(--text);
+}
+
+.animal-btn.active {
+  background: var(--accent-glow);
+  border-color: var(--accent-dim);
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.preset-info {
+  margin-bottom: 16px;
+  background: linear-gradient(135deg, var(--bg-card), var(--bg-3));
+}
+
+.preset-description {
+  font-size: 13.5px;
+  color: var(--text-2);
+  line-height: 1.6;
+  padding-bottom: 16px;
+  margin-bottom: 16px;
+  border-bottom: 1px solid var(--border);
+}
+
+.preset-specs {
+  display: flex;
+  gap: 24px;
+}
+
+.spec-value {
+  font-family: var(--font-display);
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--accent);
+}
+
+.spec-label {
+  font-size: 11px;
+  color: var(--text-3);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-top: 2px;
+}
+
+.results-card {
+  margin-bottom: 16px;
+}
+
+.results-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1px;
+  background: var(--border);
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+}
+
+.result-item {
+  background: var(--bg-3);
+  padding: 16px;
+}
+
+.result-label {
+  font-size: 11px;
+  color: var(--text-3);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin-bottom: 6px;
+}
+
+.result-value {
+  font-family: var(--font-display);
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.result-value.highlight {
+  color: var(--accent);
+}
+
+.result-value.cost {
+  color: var(--yellow);
+}
+
+/* COMPOSITION */
+.composition {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.comp-row {
+  display: grid;
+  grid-template-columns: 140px 1fr 44px 80px;
+  align-items: center;
+  gap: 10px;
+}
+
+.comp-name {
+  font-size: 13px;
+  color: var(--text-2);
+}
+
+.comp-bar-wrap {
+  height: 6px;
+  background: var(--bg-3);
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.comp-bar {
+  height: 100%;
+  background: var(--accent);
+  border-radius: 3px;
+  transition: width 0.3s ease;
+}
+
+.comp-pct {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text-2);
+  text-align: right;
+}
+
+.comp-kg {
+  font-size: 12px;
+  color: var(--accent);
+  font-weight: 600;
+  text-align: right;
+}
