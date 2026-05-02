@@ -41,7 +41,7 @@
   height: 32px;
   border-radius: 50%;
   flex-shrink: 0;
-  border: 2px solid rgba(255,255,255,0.1);
+  border: 2px solid rgba(255, 255, 255, 0.1);
 }
 
 .breed-item-name {
@@ -77,7 +77,7 @@
   justify-content: center;
   font-size: 36px;
   flex-shrink: 0;
-  border: 3px solid rgba(255,255,255,0.1);
+  border: 3px solid rgba(255, 255, 255, 0.1);
 }
 
 .breed-name {
@@ -132,7 +132,8 @@
   gap: 20px;
 }
 
-.pros-title, .cons-title {
+.pros-title,
+.cons-title {
   font-size: 11px;
   font-weight: 700;
   text-transform: uppercase;
@@ -140,17 +141,24 @@
   margin-bottom: 10px;
 }
 
-.pros-title { color: var(--accent); }
-.cons-title { color: var(--red); }
+.pros-title {
+  color: var(--accent);
+}
 
-.breed-pros ul, .breed-cons ul {
+.cons-title {
+  color: var(--red);
+}
+
+.breed-pros ul,
+.breed-cons ul {
   list-style: none;
   display: flex;
   flex-direction: column;
   gap: 8px;
 }
 
-.breed-pros li, .breed-cons li {
+.breed-pros li,
+.breed-cons li {
   display: flex;
   gap: 8px;
   font-size: 13.5px;
@@ -168,4 +176,113 @@
   color: var(--red);
   font-weight: 700;
   flex-shrink: 0;
+}
+
+/* ── 1024px ── */
+@media (max-width: 1024px) {
+  .breeds-layout {
+    grid-template-columns: 220px 1fr;
+    gap: 16px;
+  }
+
+  .breed-item-name {
+    font-size: 13px;
+  }
+
+  .breed-badge {
+    display: none;
+  }
+
+  .breed-name {
+    font-size: 18px;
+  }
+
+  .breed-avatar {
+    width: 60px;
+    height: 60px;
+    font-size: 30px;
+  }
+}
+
+/* ── 768px ── */
+@media (max-width: 768px) {
+  .breeds-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .breeds-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+  }
+
+  .breed-badge {
+    display: inline-block;
+  }
+
+  .breed-avatar {
+    width: 52px;
+    height: 52px;
+    font-size: 26px;
+  }
+
+  .breed-name {
+    font-size: 16px;
+  }
+
+  .breed-stat-value {
+    font-size: 20px;
+  }
+
+  .breed-pros-cons {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .breed-desc {
+    font-size: 13px;
+  }
+}
+
+/* ── 480px ── */
+@media (max-width: 480px) {
+  .breeds-list {
+    grid-template-columns: 1fr;
+  }
+
+  .breed-swatch {
+    width: 26px;
+    height: 26px;
+  }
+
+  .breed-item {
+    padding: 10px 12px;
+  }
+
+  .breed-header {
+    gap: 14px;
+  }
+
+  .breed-avatar {
+    width: 44px;
+    height: 44px;
+    font-size: 22px;
+  }
+
+  .breed-name {
+    font-size: 14px;
+  }
+
+  .breed-stats {
+    gap: 16px;
+  }
+
+  .breed-stat-value {
+    font-size: 18px;
+  }
+
+  .breed-pros li,
+  .breed-cons li {
+    font-size: 13px;
+  }
 }

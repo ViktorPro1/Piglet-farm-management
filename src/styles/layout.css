@@ -26,7 +26,7 @@
 .brand-icon {
   font-size: 32px;
   line-height: 1;
-  filter: drop-shadow(0 0 8px rgba(122,182,72,0.4));
+  filter: drop-shadow(0 0 8px rgba(122, 182, 72, 0.4));
 }
 
 .brand-title {
@@ -182,7 +182,7 @@
 }
 
 .btn-danger:hover {
-  background: rgba(224,85,85,0.1);
+  background: rgba(224, 85, 85, 0.1);
 }
 
 /* FORM */
@@ -273,17 +273,36 @@ tbody tr:hover {
   letter-spacing: 0.04em;
 }
 
-.badge-green { background: rgba(122,182,72,0.15); color: var(--accent); }
-.badge-red { background: rgba(224,85,85,0.15); color: var(--red); }
-.badge-orange { background: rgba(224,144,64,0.15); color: var(--orange); }
-.badge-yellow { background: rgba(212,184,64,0.15); color: var(--yellow); }
-.badge-gray { background: var(--bg-3); color: var(--text-2); }
+.badge-green {
+  background: rgba(122, 182, 72, 0.15);
+  color: var(--accent);
+}
+
+.badge-red {
+  background: rgba(224, 85, 85, 0.15);
+  color: var(--red);
+}
+
+.badge-orange {
+  background: rgba(224, 144, 64, 0.15);
+  color: var(--orange);
+}
+
+.badge-yellow {
+  background: rgba(212, 184, 64, 0.15);
+  color: var(--yellow);
+}
+
+.badge-gray {
+  background: var(--bg-3);
+  color: var(--text-2);
+}
 
 /* MODAL */
 .modal-overlay {
   position: fixed;
   inset: 0;
-  background: rgba(0,0,0,0.7);
+  background: rgba(0, 0, 0, 0.7);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -327,7 +346,9 @@ tbody tr:hover {
   cursor: pointer;
 }
 
-.modal-close:hover { color: var(--text); }
+.modal-close:hover {
+  color: var(--text);
+}
 
 .modal-footer {
   display: flex;
@@ -339,9 +360,23 @@ tbody tr:hover {
 }
 
 /* GRID */
-.grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
-.grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
-.grid-4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+.grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.grid-4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
 
 /* EMPTY STATE */
 .empty-state {
@@ -358,4 +393,195 @@ tbody tr:hover {
 
 .empty-state p {
   font-size: 14px;
+}
+
+/* ── 1024px ── */
+@media (max-width: 1024px) {
+  .sidebar {
+    width: 200px;
+  }
+
+  .page {
+    padding: 24px 24px;
+  }
+
+  .page-title {
+    font-size: 19px;
+  }
+
+  .nav-item {
+    font-size: 12.5px;
+    padding: 9px 10px;
+  }
+
+  .brand-title {
+    font-size: 12px;
+  }
+
+  th {
+    padding: 9px 12px;
+  }
+
+  td {
+    padding: 10px 12px;
+    font-size: 13px;
+  }
+
+  .grid-4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* ── 768px ── */
+@media (max-width: 768px) {
+  .app-shell {
+    flex-direction: column;
+    height: auto;
+    min-height: 100vh;
+    overflow: auto;
+  }
+
+  .sidebar {
+    width: 100%;
+    height: auto;
+    border-right: none;
+    border-bottom: 1px solid var(--border);
+    overflow-y: unset;
+  }
+
+  .sidebar-brand {
+    padding: 16px;
+  }
+
+  .brand-icon {
+    font-size: 26px;
+  }
+
+  .sidebar-nav {
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 10px 12px;
+    gap: 6px;
+  }
+
+  .nav-label {
+    display: none;
+  }
+
+  .nav-item {
+    padding: 8px 10px;
+    gap: 0;
+    justify-content: center;
+    min-width: 40px;
+  }
+
+  .nav-icon {
+    width: auto;
+  }
+
+  .sidebar-footer {
+    display: none;
+  }
+
+  .main-content {
+    overflow-y: unset;
+  }
+
+  .page {
+    padding: 20px 16px;
+    max-width: 100%;
+  }
+
+  .page-title {
+    font-size: 17px;
+  }
+
+  .grid-2 {
+    grid-template-columns: 1fr;
+  }
+
+  .grid-3 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .grid-4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .modal {
+    padding: 20px;
+  }
+
+  .modal-title {
+    font-size: 15px;
+  }
+
+  th {
+    padding: 8px 10px;
+    font-size: 10px;
+  }
+
+  td {
+    padding: 9px 10px;
+    font-size: 12.5px;
+  }
+}
+
+/* ── 480px ── */
+@media (max-width: 480px) {
+  .page {
+    padding: 16px 12px;
+  }
+
+  .page-title {
+    font-size: 15px;
+  }
+
+  .page-header {
+    margin-bottom: 16px;
+  }
+
+  .card {
+    padding: 14px;
+  }
+
+  .btn {
+    padding: 8px 14px;
+    font-size: 12.5px;
+  }
+
+  .grid-2,
+  .grid-3,
+  .grid-4 {
+    grid-template-columns: 1fr;
+  }
+
+  .modal {
+    padding: 16px;
+    border-radius: var(--radius-sm);
+  }
+
+  .modal-footer {
+    flex-direction: column-reverse;
+  }
+
+  .modal-footer .btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .form-input {
+    font-size: 16px;
+    /* запобігає zoom на iOS */
+  }
+
+  th {
+    padding: 7px 8px;
+    font-size: 10px;
+  }
+
+  td {
+    padding: 8px;
+    font-size: 12px;
+  }
 }

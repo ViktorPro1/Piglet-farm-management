@@ -16,14 +16,27 @@
 .stat-card::before {
   content: '';
   position: absolute;
-  top: 0; left: 0; right: 0;
+  top: 0;
+  left: 0;
+  right: 0;
   height: 3px;
 }
 
-.stat-accent::before { background: var(--accent); }
-.stat-orange::before { background: var(--orange); }
-.stat-yellow::before { background: var(--yellow); }
-.stat-green::before { background: var(--accent); }
+.stat-accent::before {
+  background: var(--accent);
+}
+
+.stat-orange::before {
+  background: var(--orange);
+}
+
+.stat-yellow::before {
+  background: var(--yellow);
+}
+
+.stat-green::before {
+  background: var(--accent);
+}
 
 .stat-icon {
   font-size: 18px;
@@ -68,8 +81,13 @@
   margin-top: 5px;
 }
 
-.dot-orange { background: var(--orange); }
-.dot-accent { background: var(--accent); }
+.dot-orange {
+  background: var(--orange);
+}
+
+.dot-accent {
+  background: var(--accent);
+}
 
 .event-name {
   font-size: 13.5px;
@@ -101,7 +119,7 @@
 .welcome-icon {
   font-size: 56px;
   margin-bottom: 16px;
-  filter: drop-shadow(0 0 16px rgba(122,182,72,0.3));
+  filter: drop-shadow(0 0 16px rgba(122, 182, 72, 0.3));
 }
 
 .welcome-banner h2 {
@@ -116,4 +134,108 @@
   color: var(--text-2);
   max-width: 420px;
   margin: 0 auto;
+}
+
+/* ── 1024px ── */
+@media (max-width: 1024px) {
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+
+  .stat-value {
+    font-size: 28px;
+  }
+
+  .welcome-banner {
+    padding: 36px 24px;
+  }
+
+  .welcome-banner h2 {
+    font-size: 17px;
+  }
+}
+
+/* ── 768px ── */
+@media (max-width: 768px) {
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  .stat-card {
+    padding: 14px;
+  }
+
+  .stat-value {
+    font-size: 26px;
+  }
+
+  .stat-label {
+    font-size: 11px;
+  }
+
+  .event-name {
+    font-size: 13px;
+  }
+
+  .welcome-banner {
+    padding: 28px 16px;
+    margin-top: 20px;
+  }
+
+  .welcome-icon {
+    font-size: 44px;
+  }
+
+  .welcome-banner h2 {
+    font-size: 15px;
+  }
+
+  .welcome-banner p {
+    font-size: 13px;
+  }
+}
+
+/* ── 480px ── */
+@media (max-width: 480px) {
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+  }
+
+  .stat-card {
+    padding: 12px;
+  }
+
+  .stat-icon {
+    font-size: 14px;
+  }
+
+  .stat-value {
+    font-size: 22px;
+    margin: 4px 0 2px;
+  }
+
+  .stat-label {
+    font-size: 10px;
+    letter-spacing: 0.03em;
+  }
+
+  .event-date {
+    font-size: 11px;
+  }
+
+  .welcome-banner {
+    padding: 24px 14px;
+  }
+
+  .welcome-icon {
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+
+  .welcome-banner h2 {
+    font-size: 14px;
+  }
 }

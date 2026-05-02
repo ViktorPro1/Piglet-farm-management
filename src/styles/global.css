@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@400;600;700&family=Mulish:wght@400;500;600&display=swap');
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -26,11 +28,13 @@
   --radius-sm: 8px;
   --font-display: 'Unbounded', sans-serif;
   --font-body: 'Mulish', sans-serif;
-  --shadow: 0 4px 24px rgba(0,0,0,0.4);
-  --shadow-sm: 0 2px 8px rgba(0,0,0,0.3);
+  --shadow: 0 4px 24px rgba(0, 0, 0, 0.4);
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.3);
 }
 
-html, body, #root {
+html,
+body,
+#root {
   height: 100%;
   background: var(--bg);
   color: var(--text);
@@ -39,15 +43,56 @@ html, body, #root {
   line-height: 1.6;
 }
 
-::-webkit-scrollbar { width: 6px; }
-::-webkit-scrollbar-track { background: var(--bg-2); }
-::-webkit-scrollbar-thumb { background: var(--border-light); border-radius: 3px; }
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-2);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border-light);
+  border-radius: 3px;
+}
 
 button {
   font-family: var(--font-body);
   cursor: pointer;
 }
 
-input, select, textarea {
+input,
+select,
+textarea {
   font-family: var(--font-body);
+}
+
+/* ── 1024px ── */
+@media (max-width: 1024px) {
+
+  html,
+  body,
+  #root {
+    font-size: 14px;
+  }
+}
+
+/* ── 768px ── */
+@media (max-width: 768px) {
+
+  html,
+  body,
+  #root {
+    font-size: 14px;
+  }
+}
+
+/* ── 480px ── */
+@media (max-width: 480px) {
+
+  html,
+  body,
+  #root {
+    font-size: 13px;
+  }
 }
