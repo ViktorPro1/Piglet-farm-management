@@ -1,6 +1,10 @@
-# П’ятачок — Управління свинофермою
+# П'ятачок — Управління свинофермою
 
 React + TypeScript + Vite додаток для ведення обліку на свинофермі.
+
+## Live Demo
+
+https://piglet-farm-management.vercel.app
 
 ## Функціонал
 
@@ -17,14 +21,15 @@ React + TypeScript + Vite додаток для ведення обліку на
 
 - React 18
 - TypeScript
-- Vite
+- Vite 8
 - React Router DOM
+- PWA (vite-plugin-pwa)
 - localStorage
 
 ## Запуск
 
 ```bash
-npm install
+npm install --legacy-peer-deps
 npm run dev
 ```
 
